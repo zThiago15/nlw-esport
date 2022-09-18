@@ -2,6 +2,7 @@ import { GameBanner } from './components/GameBanner';
 import { CreateAdBanner } from './components/CreateAdBanner';
 import { useEffect, useState } from 'react';
 import * as Dialog from '@radix-ui/react-dialog';
+import axios from 'axios';
 
 import './styles/main.css';
 import logo from './assets/images/logo.svg';
@@ -22,9 +23,8 @@ function App() {
   const [games, setGames] = useState<Games[]>([]);
 
   // useEffect( () => {
-  //   fetch('http://localhost:3001/games')
-  //     .then((result) => result.json())
-  //     .then((data) => setGames(data));
+  //   axios('http://localhost:3001/games')
+  //     .then((result) => setGames(result.data));
   // }, []);
 
   
